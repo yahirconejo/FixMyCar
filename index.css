@@ -1,1 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dionostic</title>
+</head>
+<body>
 
+    
+    <!--  Nav for the whole page -->
+    <div id="nav">
+        
+        <div id="largeNav">
+            <div id="largeLogo">
+                <h2 id="lLogo1"></h2>
+                <h2 id="lLogo2"></h2>
+            </div>
+
+            <div class="searchNav">
+                <div class="scopeNav"></div>
+                <div class="handleNav"></div>
+                <div class="handleNav2"></div>
+            </div>
+
+            <div id="listNav">
+                <ul>
+                    <li class="listHomeText" onclick="location.reload()"><a>Home</a></li>
+                    <li class="listMapText" onclick="setScreenToMapScreen()"><a>Maps</a></li>
+                    <li><a href="#">Credits</a></li>
+                </ul>
+            </div>
+        </div>
+            
+        <div id="smallNav">
+
+            <div id="smallLogo">
+                <h2 id="smLogo1"></h2>
+                <h2 id="smLogo2"></h2>
+            </div>
+
+            <div id="burgerNav">
+
+                <div id="burger">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="searchOverlay">
+        <div class="searchbar">
+            <input type="text" name="search" placeholder="Search..." class="searchInput" >
+            <div class="innerWheelSB2"></div>
+            <div class="innerWheelSB3"></div>
+            <div class="innerWheelSB4"></div>
+            <div class="innerWheelSB5"></div>
+            <div class="innerWheelSB1"></div>
+            <div class="innerWheelSB6"></div>
+            <div class="innerWheelSB7"></div>
+        </div>
+
+        <div id="searchBarOptions">
+            <!-- <p class="searchBarAnswerItems" >Im trying to make this long enough that it wraps</p> -->
+        </div>
+    </div>
+
+    <div id="burgerOverlay">
+        <div id="burgerListOverlay">
+            <ul>
+                <li class="listHomeText" onclick="location.reload()"><a>Home</a></li>
+                <li class="listMapText" onclick="setScreenToMapScreen()"><a>Maps</a></li>
+                <li><a href="#">Credits</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!--  The default screen for home  -->
+    <div id="homeDefault">
+
+        <div id="section1">
+
+        <div class="header">
+                <h1>Specify The Problem</h1>
+        </div> 
+
+
+
+            <div id="gallerys">
+                <div id="topGallery" class="TMBGallerys">
+
+                    <div class="galleryBoxes">
+                        <H2>Brake Work</H2>
+                        <div class="galleryLogos">
+                            <!-- Break work -->
+                            <div id="galleryBreakWork1"></div>
+                            <div id="galleryBreakWork2"></div>
+                            <div id="galleryBreakWork3"></div>
+                            <div id="galleryBreakWork4"></div>
+                        </div>
+                    </div>
+
+                    <div class="galleryBoxes">
+                        <H2>Oil Changes</H2>
+                        <div class="galleryLogos">
+                            <!-- Oil changes -->
+                            <div id="galleryOilChange1"></div>
+                            <div id="galleryOilChange2"></div>
+                            <div id="galleryOilChange3"></div>
+                            <div id="galleryOilChange4"></div>
+                            <div id="galleryOilChange5"></div>
+                            <div id="galleryOilChange6"></div>
+                            <div id="galleryOilChange7"></div>
+                        </div>
+                    </div>
+
+                    <div class="galleryBoxes">
+                        <H2>Coolant System</H2>
+                        <div class="galleryLogos">
+                            <!-- Coolant Systems -->
+                            <div id="galleryCoolantSystem1"></div>
+                            <div id="galleryCoolantSystem2"></div>
+                            <div id="galleryCoolantSystem3"></div>
+                            <div id="galleryCoolantSystem4"></div>
+                            <div id="galleryCoolantSystem5"></div>
+                            <div id="galleryCoolantSystem6"></div>
+                            <div id="galleryCoolantSystem7"></div>
+                            <div id="galleryCoolantSystem8"></div>
+                            <div id="galleryCoolantSystem9"></div>
+                            <div id="galleryCoolantSystem10"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="middleGallery" class="TMBGallerys">
+                    <div id="middleGallerySect1">
+                        <div class="galleryBoxes">
+                            <H2>Tires</H2>
+                            <div class="galleryLogos">
+                                <!-- Tires -->
+                                <div id="galleryTire1"></div>
+                                <div id="galleryTire2"></div>
+                                <div id="galleryTire3"></div>
+                                <div id="galleryTire4"></div>
+                                <div id="galleryTire5"></div>
+                                <div id="galleryTire6"></div>
+                                <div id="galleryTire7"></div>
+                                <div id="galleryTire8"></div>
+                            </div>
+                        </div>
+
+                        <div class="galleryBoxes">
+                            <H2>Ignition System</H2>
+                            <div class="galleryLogos">
+                                <!-- Ignition System -->
+                                <div id="galleryIgnitionSystem1"></div>
+                                <div id="galleryIgnitionSystem2"></div>
+                                <div id="galleryIgnitionSystem3"></div>
+                                <div id="galleryIgnitionSystem4"></div>
+                                <div id="galleryIgnitionSystem5"></div>
+                                <div id="galleryIgnitionSystem6"></div>
+                                <div id="galleryIgnitionSystem7"></div>
+                                <div id="galleryIgnitionSystem8"></div>
+                                <div id="galleryIgnitionSystem9"></div>
+                                <div id="galleryIgnitionSystem10"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="middleGallerySect2">
+                        <div class="galleryBoxes">
+                            <H2>Eletrical System</H2>
+                            <div class="galleryLogos">
+                                <!-- Eletrical System -->
+                                <div id="galleryElectricalSystem1"></div>
+                                <div id="galleryElectricalSystem2"></div>
+                                <div id="galleryElectricalSystem3"></div>
+                                <div id="galleryElectricalSystem4"></div>
+                                <div id="galleryElectricalSystem5"></div>
+                                <div id="galleryElectricalSystem6"></div>
+                                <div id="galleryElectricalSystem7"></div>
+                                <div id="galleryElectricalSystem8"></div>
+                                <div id="galleryElectricalSystem9"></div>
+                                <div id="galleryElectricalSystem10"></div>
+                                <div id="galleryElectricalSystem11"></div>
+                            </div>
+                        </div>
+                    
+                        <div class="galleryBoxes">
+                            <H2>Fuel System</H2>
+                            <div class="galleryLogos">
+                                <!-- Fuel System -->
+                                <div id="galleryFuelSystem1"></div>
+                                <div id="galleryFuelSystem2"></div>
+                                <div id="galleryFuelSystem3"></div>
+                                <div id="galleryFuelSystem4"></div>
+                                <div id="galleryFuelSystem5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="bottomGallery" class="TMBGallerys">
+
+                    <div class="galleryBoxes">
+                        <H2>Transmission</H2>
+                        <div class="galleryLogos">
+                            <!-- Transmission -->
+                            <div id="galleryTransmission1"></div>
+                            <div id="galleryTransmission2"></div>
+                            <div id="galleryTransmission3"></div>
+                            <div id="galleryTransmission4"></div>
+                            <div id="galleryTransmission5"></div>
+                            <div id="galleryTransmission6"><p>1</p></div>
+                            <div id="galleryTransmission7"><p>3</p></div>
+                            <div id="galleryTransmission8"><p>5</p></div>
+                            <div id="galleryTransmission9"><p>2</p></div>
+                            <div id="galleryTransmission10"><p>4</p></div>
+                            <div id="galleryTransmission11"><p>R</p></div>
+                        </div>
+                    </div>
+
+                    <div class="galleryBoxes">
+                        <H2>Exhaust System</H2>
+                        <div class="galleryLogos">
+                            <!-- Exhaust System -->
+                            <div id="galleryExhaustSystemAll">
+                            <div id="galleryExhaustSystem1"></div>
+                            <div id="galleryExhaustSystem2"></div>
+                            <div id="galleryExhaustSystem3"></div>
+                            <div id="galleryExhaustSystem4"></div>
+                            <div id="galleryExhaustSystem5"></div>
+                            <div id="galleryExhaustSystem6"></div>
+                            <div id="galleryExhaustSystem7"></div>
+                            <div id="galleryExhaustSystem8"></div>
+                            <div id="galleryExhaustSystem9"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="galleryBoxes">
+                        <H2>Air Conditioning System</H2>
+                        <div class="galleryLogos">
+                            <!-- Air Conditioning System -->
+                            <div id="galleryAirConditioningSystem1"></div>
+                            <div id="galleryAirConditioningSystem2"></div>
+                            <div id="galleryAirConditioningSystem3"></div>
+                            <div id="galleryAirConditioningSystem4"></div>
+                            <div id="galleryAirConditioningSystem5"></div>
+                            <div id="galleryAirConditioningSystem6"></div>
+                        </div>
+                    </div> 
+
+                </div>
+            </div>
+
+            <div id="naggingArrow">
+                <h1>Next</h1>
+                <div id="arrow">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="section2">
+            <div class="header">
+                <h1>Discribe The Issue</h1>
+            </div>
+
+            <div id="discribeGallery">
+                <div class="TMBGallerys">
+                    <div class="disGalSections">
+                        <div class="galleryBoxes">
+                            <h2>I Can Feel It</h2>
+                            <div class="galleryLogos">
+                                <!-- I can feel it logo -->
+                                <div id="galleryICanFeelIt1"></div>
+                                <div id="galleryICanFeelIt2"></div>
+                                <div id="galleryICanFeelIt3"></div>
+                                <div id="galleryICanFeelIt4"></div>
+                                <div id="galleryICanFeelIt5"></div>
+                                <div id="galleryICanFeelIt6"></div>
+                            </div>
+                        </div>
+
+                        <div class="galleryBoxes">
+                            <h2>I Can Hear It</h2>
+                            <div class="galleryLogos">
+                                <!-- I can Hear it logo -->
+                                <div id="galleryICanHearIt1"></div>
+                                <div id="galleryICanHearIt2"></div>
+                                <div id="galleryICanHearIt3"></div>
+                                <div id="galleryICanHearIt4"></div>
+                                <div id="galleryICanHearIt5"></div>
+                                <div id="galleryICanHearIt6"></div>
+                                <div id="galleryICanHearIt7"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="disGalSections">
+                        <div class="galleryBoxes">
+                            <h2>I Can See It</h2>
+                            <div class="galleryLogos">
+                                <!-- I can See it logo -->
+                                <div id="galleryICanSeeIt1"></div>
+                                <div id="galleryICanSeeIt2"></div>
+                                <div id="galleryICanSeeIt3"></div>
+
+                            </div>
+                        </div>
+
+                        <div class="galleryBoxes">
+                            <h2 style="white-space: nowrap">I Can Smell It </h2>
+                            <div class="galleryLogos">
+                                <!-- I can smell it logo -->
+                                <div id="galleryICanSmellIt1"></div>
+                                <div id="galleryICanSmellIt2"></div>
+                                <div id="galleryICanSmellIt3"></div>
+                                <div id="galleryICanSmellIt4"></div>
+                                <div id="galleryICanSmellIt5"></div>
+                                <div id="galleryICanSmellIt6"></div>
+                                <div id="galleryICanSmellIt7"></div>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="galleryBoxes">
+                            <h2 style="white-space: nowrap">It Won't Start</h2>
+                            <div class="galleryLogos">
+                                <!-- It Won't logo -->
+                                <div id="galleryItWontStart1"></div>
+                                <div id="galleryItWontStart2"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+        <div id="footer">
+
+
+        </div>
+
+    </div>
+
+    <!-- Home Screen if issue is clicked -->
+    <div id="pageScreen">
+        
+        <div class="pageSection1">
+
+            <div id="backButton">
+                <h3>Back Home</h3>
+                <h3>Back Home</h3>
+            </div>
+
+            <div id="barTitle">
+                <h2><span></span>&nbsp<div id="transpar"></div></h2>
+            </div>
+
+            <!-- create cheack stuff -->
+            <div id="whatsWrongContainer">
+
+                <!-- the cheack boxes -->
+                <div id="whatsWrongInputs">
+
+                    <!-- a cheack box -->
+                    <!-- <label class="radioButton"> 
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                        <span class="checkWords">Whats wrong ?</span>
+                    </label> -->
+
+                </div>
+
+                <div id="whatsWrongOutputs">
+                    <br>
+
+                    <!-- <div class="anAnswer">
+                        <h1 class="answerHeader">Contaminatiedsfosj brakes thing</h1>
+                        <h3 class="answerFix">Brake Inspection</h3>
+                        <p class="answerFixDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ipsa suscipit ad fugiat quibusdam incidunt quasi officia exercitationem doloremque ratione blanditiis possimus corporis quod veniam quo quaerat qui, odit distinctio.</p>
+                        <h1 class="answerPriceES">
+                            <span class="price">Price: </span>
+                            <span class="tip"></span>
+                            <span>$1800 -<wrb></wrb> $1900</span>
+                        </h1>
+                    </div>   -->
+
+
+
+
+                </div>
+                
+                <!-- submit button -->
+
+                <button id="submitButton" disabled>
+                    <h3>Next Step</h3>                
+                </button>
+
+                <button id="mapButton" type="reset" onclick="setScreenToMapScreen()" >
+                    <h3>Map</h3>                
+                </button>
+
+                
+            </div>
+
+            <div>
+
+            </div>
+
+        </div>
+
+        <div id="pageSection2">
+
+
+        </div>
+
+    </div>
+    <!-- Map Screen ----------------- -->
+    <div id="mapScreen">
+        <div id="mapSection1">
+            <div id="mapSection1Header"> Near by places </div>
+    
+            <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d23400.62426121219!2d-119.30793645007417!3d45.84275139762731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scar%20repair!5e0!3m2!1sen!2sus!4v1696972798275!5m2!1sen!2sus" 
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h1 id="mapIsLoading">Loading....</h1>
+            </div>
+    
+        </div>
+        <div id="mapSection2">
+    
+        </div>
+    </div>
+    
+    <!-- Video Screen ------------------- -->
+    <div id="videoScreen">
+        <div id="videoScreenSection1">
+
+            <div id="videoBackButton"><h3>Back</h3></div>
+
+            <div id="allVideoContent">
+
+                <div id="preStepVideo">
+                    <h1 class="SVHeader"></h1>
+
+                    <div class="eachStepWithVideo">
+                        <h1 class="videoHeader"> Check If Your Tire Is Truly Underinflated</h1>
+                        <div class="videoAndSteps">
+                            <div class="step">
+                                <div class="video"><img src="tireIMG/deflatedTire.jpg"><p>1</p></div>
+                                <div class="video"><img src="tireIMG/undeflatedTire.jpg"><p>2</p></div>
+                                <div class="video"><video controls muted><source src="tireIMG/UndeflatedTireKick.mp4" type="video/mp4" ></video><p>3</p></div>
+                                <div class="video"><video controls muted><source src="tireIMG/deflatedTireKick.mp4" type="video/mp4" ></video><p>4</p></div>
+                                <div class="stepText">
+                                    <ul>
+                                        <li>Find and locate the underinflated tire.</li>
+                                    </ul>
+                                    <p>
+                                        The <b>underinflated tire</b> will produce a <b>round bump</b> at the bottom of the wheel (<em >As shown in image 1</em>), while a <b>inflated tirewill not</b> (<em>As shown in image 2</em>). 
+                                        <br>
+                                        <br>
+                                        The <b>underinflated tire</b> will also <b>shake</b> a lot when hit (<em>as seen in video 3</em>), and an <b>inflated tire won't shake</b> (<em>as seen on video 4</em>).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="currentStepVideo">
+                    <h1 class="SVHeader"></h1>
+
+                    <div class="eachStepWithVideo">
+                        <h1 class="videoHeader">Check The Tires PSI</h1>
+                        <div class="videoAndSteps">
+                            <div class="step">
+                                <div class="video"><img src="tireIMG/tirePSILocation1.jpg"><p>5</p></div>
+                                <div class="video"><img src="tireIMG/tirePSILocation2.jpg"><p>6</p></div>
+                                <div class="video"><img src="tireIMG/tirePSILocation3.jpg"><p>7</p></div>
+                                <div class="video"><img src="tireIMG/tirePSILocation4.jpg"><p>8</p></div>
+                                <div class="stepText">
+                                    <ul>
+                                        <li>Find and locate the recomended tire PSI.</li>
+                                    </ul>
+                                    <p>
+                                        Find the <b>Max</b> tire pressure or <b>PSI</b>, located <b>around</b> the <b>rim of the tires</b> (<em>Seen in pictures 5, 6, 7, 8</em>).
+                                        <br>
+                                        <br>
+                                        A good rule of thumb is to have the tire's <b>PSI 80% of its max</b>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="eachStepWithVideo">
+                        <h1 class="videoHeader"></h1>
+                        <div class="videoAndSteps">
+                            <div class="step">
+                                <div class="video"><video controls muted><source src="tireIMG/checkTirePSI1.mp4" type="video/mp4" ></video><p>9</p></div>
+                                <div class="video"><video controls muted><source src="tireIMG/checkTirePSI2.mp4" type="video/mp4" ></video><p>10</p></div>
+                                <div class="video"><video controls muted><source src="tireIMG/checkTirePSI3.mp4" type="video/mp4" ></video><p>11</p></div>
+                                <div class="stepText">
+                                    <ul>
+                                        <li>Check your tires PSI</li>
+                                    </ul>
+                                    <p>
+                                        Find your tires valve stem (<em>located in the rim of the wheel</em>). 
+                                        <br>
+                                        <br>
+                                        Check your tires <b>current PSI</b> -- make sure its at least <b>80%</b> of its <b>max PSI</b> -- <b>using a pressure gauge</b> on the <b>valve stem</b>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="eachStepWithVideo">
+                        <h1 class="videoHeader">Add Air To Your Deflated Tire</h1>
+                        <div class="videoAndSteps">
+                            <div class="step">
+                                <div class="video"><video controls muted><source src="tireIMG/addTireAir1.mp4" type="video/mp4" ></video><p>12</p></div>
+                                <div class="video"><video controls muted><source src="tireIMG/addTireAir2.mp4" type="video/mp4" ></video><p>13</p></div>
+                                <div class="stepText">
+                                    <ul>
+                                        <li>Add Air!</li>
+                                    </ul>
+                                    <p>
+                                        <b>Start pumping air.</b>
+                                        <br>
+                                        <br>
+                                        Make sure to <b>check</b> the tires <b>PSI periodically</b>, to insure that it doesn't get overinflated.
+                                        <br>
+                                        <br>
+                                        Once you reach the desired air pressure --<em>80% of its max PSI</em>-- then <b>insure</b> that the <b>rest of the wheel have the same amount of PSI</b>. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div id="videoScreenSection2">
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
