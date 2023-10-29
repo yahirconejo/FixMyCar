@@ -2292,8 +2292,13 @@ body::-webkit-scrollbar{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: nowrap;
 	color: rgb(0, 0, 0);
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#submitButton h3{
+	white-space: nowrap;
 }
 
 
